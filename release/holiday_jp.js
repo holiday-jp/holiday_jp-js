@@ -9346,7 +9346,7 @@
 		},
 		"scripts": {
 			"test": "mocha --require should test/*.js",
-			"build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js; uglifyjs -c -o ./release/holiday_jp.min.js --source-map ./release/holiday_jp.map ./release/holiday_jp.js"
+			"build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs -c -o holiday_jp.min.js --source-map holiday_jp.map holiday_jp.js"
 		},
 		"repository": {
 			"type": "git",
