@@ -9331,7 +9331,7 @@
 
 	module.exports = {
 		"name": "holiday_jp",
-		"version": "0.0.1",
+		"version": "1.0.0",
 		"description": "Japanese holidays",
 		"main": "release/holiday_jp.js",
 		"devDependencies": {
@@ -9339,13 +9339,14 @@
 			"chai": ">= 1.3.0",
 			"js-yaml": ">= 1.0.3",
 			"should": "~1.2.2",
+			"uglify-js": "*",
 			"webpack": "*",
 			"json-loader": "*",
 			"moment": "*"
 		},
 		"scripts": {
 			"test": "mocha --require should test/*.js",
-			"build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js;node scripts/build.js"
+			"build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js; uglifyjs -c -o ./release/holiday_jp.min.js --source-map ./release/holiday_jp.map ./release/holiday_jp.js"
 		},
 		"repository": {
 			"type": "git",
