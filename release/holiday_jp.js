@@ -9331,7 +9331,7 @@
 
 	module.exports = {
 		"name": "holiday_jp",
-		"version": "0.0.0",
+		"version": "0.0.1",
 		"description": "Japanese holidays",
 		"main": "release/holiday_jp.js",
 		"devDependencies": {
@@ -9344,7 +9344,8 @@
 			"moment": "*"
 		},
 		"scripts": {
-			"test": "mocha --require should test/*.js"
+			"test": "mocha --require should test/*.js",
+			"build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js;node scripts/build.js"
 		},
 		"repository": {
 			"type": "git",

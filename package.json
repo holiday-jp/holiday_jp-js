@@ -13,7 +13,8 @@
     "moment": "*"
   },
   "scripts": {
-    "test": "mocha --require should test/*.js"
+    "test": "mocha --require should test/*.js",
+    "build": "webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js"
   },
   "repository": {
     "type": "git",
