@@ -75,7 +75,7 @@
 	    if (holidays[date]) {
 	      return true;
 	    }
-	    return date;
+	    return false;
 	  }
 	};
 
