@@ -1,7 +1,7 @@
 var fs = require('fs');
 var files = fs.readdirSync('lib');
 var expect = require('chai').expect;
-var holiday_jp = require('./../lib/holiday_jp');
+var holiday_jp = require('./../release/holiday_jp'); // test release build
 
 describe('holiday_jp', function(){
   it('should have New Year\'s Day(2009-01-01) between 2009-01-01 and 2009-01-31', function(){
@@ -22,3 +22,4 @@ describe('holiday_jp', function(){
     expect(holiday_jp.isHoliday(new Date('2011-09-18'))).to.not.eq(true);
   });
 });
+
