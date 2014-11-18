@@ -1,6 +1,6 @@
 {
   "name": "holiday_jp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
   "devDependencies": {

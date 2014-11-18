@@ -3,12 +3,19 @@ var files = fs.readdirSync('lib');
 var expect = require('chai').expect;
 var holiday_jp = require('./../release/holiday_jp'); // test release build
 
-describe('holiday_jp', function(){  
+describe('holiday_jp', function(){
+  
   it('should have valid version', function(){
     expect(holiday_jp.VERSION).to.match(/^[0-9]+\.[0-9]+\.[0-9]+$/);
   });
 
   it('.between should have New Year\'s Day(2009-01-01) between 2009-01-01 and 2009-01-31', function(){
+    var holidays = holiday_jp.between(new Date('2009-01-01'), new Date('2009-01-31'));
+    var new_year_day = holidays[0];
+    expect(new_year_day['date'] == new Date('2009-01-01'));
+  });
+
+  it('.between should be holiday', function(){
     var holidays = holiday_jp.between(new Date('2009-01-01'), new Date('2009-01-31'));
     var new_year_day = holidays[0];
     expect(new_year_day['date'] == new Date('2009-01-01'));
@@ -24,6 +31,11 @@ describe('holiday_jp', function(){
     for (year = 2016; year <= 2050; year++) {
       expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.eq(true);
     }
+  });
+
+  it('.between should have holiday between 2014-09-23 00:00:01 and 2014-09-23 00:00:01', function(){
+    var holidays = holiday_jp.between(new Date(2014, 8, 23, 0, 0, 1), new Date(2014, 8, 23, 0, 0, 1));
+    expect(holidays.length).to.eq(1);
   });
 });
 
