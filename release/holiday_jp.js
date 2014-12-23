@@ -5456,6 +5456,13 @@
 	  'name': '山の日',
 	  'name_en': "Mountain Day"
 	};
+	holidays['2019-08-12'] = {
+	  'date': '2019-08-12',
+	  'week': '月',
+	  'week_en': 'Monday',
+	  'name': '振替休日',
+	  'name_en': "Holiday in lieu"
+	};
 	holidays['2019-09-16'] = {
 	  'date': '2019-09-16',
 	  'week': '月',
@@ -6050,6 +6057,13 @@
 	  'week_en': 'Sunday',
 	  'name': '山の日',
 	  'name_en': "Mountain Day"
+	};
+	holidays['2024-08-12'] = {
+	  'date': '2024-08-12',
+	  'week': '月',
+	  'week_en': 'Monday',
+	  'name': '振替休日',
+	  'name_en': "Holiday in lieu"
 	};
 	holidays['2024-09-16'] = {
 	  'date': '2024-09-16',
@@ -6806,6 +6820,13 @@
 	  'week_en': 'Sunday',
 	  'name': '山の日',
 	  'name_en': "Mountain Day"
+	};
+	holidays['2030-08-12'] = {
+	  'date': '2030-08-12',
+	  'week': '月',
+	  'week_en': 'Monday',
+	  'name': '振替休日',
+	  'name_en': "Holiday in lieu"
 	};
 	holidays['2030-09-16'] = {
 	  'date': '2030-09-16',
@@ -8165,6 +8186,13 @@
 	  'name': '山の日',
 	  'name_en': "Mountain Day"
 	};
+	holidays['2041-08-12'] = {
+	  'date': '2041-08-12',
+	  'week': '月',
+	  'week_en': 'Monday',
+	  'name': '振替休日',
+	  'name_en': "Holiday in lieu"
+	};
 	holidays['2041-09-16'] = {
 	  'date': '2041-09-16',
 	  'week': '月',
@@ -8921,6 +8949,13 @@
 	  'name': '山の日',
 	  'name_en': "Mountain Day"
 	};
+	holidays['2047-08-12'] = {
+	  'date': '2047-08-12',
+	  'week': '月',
+	  'week_en': 'Monday',
+	  'name': '振替休日',
+	  'name_en': "Holiday in lieu"
+	};
 	holidays['2047-09-16'] = {
 	  'date': '2047-09-16',
 	  'week': '月',
@@ -9337,7 +9372,7 @@
 
 	module.exports = {
 		"name": "holiday_jp",
-		"version": "1.0.0",
+		"version": "1.0.2",
 		"description": "Japanese holidays",
 		"main": "release/holiday_jp.js",
 		"devDependencies": {

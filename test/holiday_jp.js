@@ -1,7 +1,10 @@
 var fs = require('fs');
 var files = fs.readdirSync('lib');
 var expect = require('chai').expect;
+var yaml = require('js-yaml');
 var holiday_jp = require('./../release/holiday_jp'); // test release build
+
+var TESTSET_DIR = __dirname + '/../holiday_jp/';
 
 describe('holiday_jp', function(){
   
@@ -36,6 +39,13 @@ describe('holiday_jp', function(){
   it('.between should have holiday between 2014-09-23 00:00:01 and 2014-09-23 00:00:01', function(){
     var holidays = holiday_jp.between(new Date(2014, 8, 23, 0, 0, 1), new Date(2014, 8, 23, 0, 0, 1));
     expect(holidays.length).to.eq(1);
+  });
+
+  it('.isHoliday should be holiday all holidays.yml', function(){
+    var testset = yaml.safeLoad(fs.readFileSync(TESTSET_DIR + 'holidays.yml', 'utf8'));
+    Object.keys(testset).forEach(function (key) {
+      expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);
+    });
   });
 });
 
