@@ -41,7 +41,7 @@ describe('holiday_jp', function(){
     expect(holidays.length).to.eq(1);
   });
 
-  it('.isHoliday should be holiday all holidays.yml', function(){
+  it('.isHoliday should be holiday all holidays_detailed.yml', function(){
     var testset = yaml.safeLoad(fs.readFileSync(TESTSET_DIR + 'holidays_detailed.yml', 'utf8'));
     Object.keys(testset).forEach(function (key) {
       expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);

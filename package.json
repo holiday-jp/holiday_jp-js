@@ -1,6 +1,6 @@
 {
   "name": "holiday_jp",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
   "devDependencies": {
@@ -10,7 +10,6 @@
     "should": "~1.2.2",
     "uglify-js": "*",
     "webpack": "*",
-    "json-loader": "*",
     "moment": "*"
   },
   "scripts": {
