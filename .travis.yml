@@ -6,3 +6,4 @@ node_js:
   - "6"
 before_install:
   - git submodule update --init
+  - cd holiday_jp/; git pull origin master; cd ../
