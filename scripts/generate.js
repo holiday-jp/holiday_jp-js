@@ -3,7 +3,7 @@ var fs = require('fs')
   , yaml = require('js-yaml')
   , moment = require('moment');
 
-var holidays = yaml.safeLoad(fs.readFileSync(__dirname + '/../holiday_jp/holidays.yml', 'utf8'));
+var holidays = yaml.safeLoad(fs.readFileSync(__dirname + '/../holiday_jp/holidays_detailed.yml', 'utf8'));
 var timestamp = moment().format('YYYY-MM-DD HH:mm:ss');
 var jsfile = [util.format("// Generated from holidays.yml at %s;", timestamp)];
 jsfile.push('exports.holidays = {};');
