@@ -18,4 +18,4 @@ Object.keys(holidays).forEach(function (date) {
   jsfile.push('};');
 });
 
-fs.writeFile(__dirname + '/../lib/holidays.js', jsfile.join("\n"));
+fs.writeFileSync(__dirname + '/../lib/holidays.js', jsfile.join("\n"));
