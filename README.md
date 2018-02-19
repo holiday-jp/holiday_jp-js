@@ -2,6 +2,12 @@
 
 Get holidays in Japan.
 
+## Install
+
+```sh
+$ npm install @holiday-jp/holiday_jp
+```
+
 ## Usage
 
 In HTML

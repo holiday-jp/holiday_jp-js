@@ -1,5 +1,5 @@
 {
-  "name": "holiday_jp",
+  "name": "@holiday-jp/holiday_jp",
   "version": "1.3.1",
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
