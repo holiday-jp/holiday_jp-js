@@ -115,13 +115,13 @@ module.exports = holiday_jp;
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"holiday_jp","version":"1.3.1","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git checkout v0.9.0; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.5.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
+module.exports = {"name":"@holiday-jp/holiday_jp","version":"1.4.1","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git checkout v0.9.0; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.5.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-// Generated from holidays.yml at 2018-02-19 17:21:38;
+// Generated from holidays.yml at 2018-02-19 18:12:16;
 var holidays = {};
 holidays['1970-01-01'] = {
   'date': '1970-01-01',
