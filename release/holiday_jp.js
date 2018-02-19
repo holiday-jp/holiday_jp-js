@@ -115,13 +115,13 @@ module.exports = holiday_jp;
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"holiday_jp","version":"1.3.1","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git checkout v0.9.0; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.5.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
+module.exports = {"name":"@holiday-jp/holiday_jp","version":"1.4.0","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git pull origin master; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.6.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-// Generated from holidays.yml at 2018-02-19 17:21:38;
+// Generated from holidays.yml at 2018-02-19 18:03:29;
 var holidays = {};
 holidays['1970-01-01'] = {
   'date': '1970-01-01',
@@ -414,7 +414,7 @@ holidays['1973-04-30'] = {
   'date': '1973-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1973-05-03'] = {
@@ -449,7 +449,7 @@ holidays['1973-09-24'] = {
   'date': '1973-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1973-10-10'] = {
@@ -526,7 +526,7 @@ holidays['1974-05-06'] = {
   'date': '1974-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1974-09-15'] = {
@@ -540,7 +540,7 @@ holidays['1974-09-16'] = {
   'date': '1974-09-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '敬老の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1974-09-23'] = {
@@ -568,7 +568,7 @@ holidays['1974-11-04'] = {
   'date': '1974-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1974-11-23'] = {
@@ -666,7 +666,7 @@ holidays['1975-11-24'] = {
   'date': '1975-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1976-01-01'] = {
@@ -743,7 +743,7 @@ holidays['1976-10-11'] = {
   'date': '1976-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '体育の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1976-11-03'] = {
@@ -855,7 +855,7 @@ holidays['1978-01-02'] = {
   'date': '1978-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1978-01-15'] = {
@@ -869,7 +869,7 @@ holidays['1978-01-16'] = {
   'date': '1978-01-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '成人の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1978-02-11'] = {
@@ -967,7 +967,7 @@ holidays['1979-02-12'] = {
   'date': '1979-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1979-03-21'] = {
@@ -988,7 +988,7 @@ holidays['1979-04-30'] = {
   'date': '1979-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1979-05-03'] = {
@@ -1128,7 +1128,7 @@ holidays['1980-11-24'] = {
   'date': '1980-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1981-01-01'] = {
@@ -1177,7 +1177,7 @@ holidays['1981-05-04'] = {
   'date': '1981-05-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '憲法記念日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1981-05-05'] = {
@@ -1254,7 +1254,7 @@ holidays['1982-03-22'] = {
   'date': '1982-03-22',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1982-04-29'] = {
@@ -1303,7 +1303,7 @@ holidays['1982-10-11'] = {
   'date': '1982-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '体育の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1982-11-03'] = {
@@ -1415,7 +1415,7 @@ holidays['1984-01-02'] = {
   'date': '1984-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1984-01-15'] = {
@@ -1429,7 +1429,7 @@ holidays['1984-01-16'] = {
   'date': '1984-01-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '成人の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1984-02-11'] = {
@@ -1457,7 +1457,7 @@ holidays['1984-04-30'] = {
   'date': '1984-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1984-05-03'] = {
@@ -1492,7 +1492,7 @@ holidays['1984-09-24'] = {
   'date': '1984-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1984-10-10'] = {
@@ -1569,7 +1569,7 @@ holidays['1985-05-06'] = {
   'date': '1985-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1985-09-15'] = {
@@ -1583,7 +1583,7 @@ holidays['1985-09-16'] = {
   'date': '1985-09-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '敬老の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1985-09-23'] = {
@@ -1611,7 +1611,7 @@ holidays['1985-11-04'] = {
   'date': '1985-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1985-11-23'] = {
@@ -1709,7 +1709,7 @@ holidays['1986-11-24'] = {
   'date': '1986-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1987-01-01'] = {
@@ -1758,7 +1758,7 @@ holidays['1987-05-04'] = {
   'date': '1987-05-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '憲法記念日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1987-05-05'] = {
@@ -1835,7 +1835,7 @@ holidays['1988-03-21'] = {
   'date': '1988-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1988-04-29'] = {
@@ -1912,7 +1912,7 @@ holidays['1989-01-02'] = {
   'date': '1989-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1989-01-15'] = {
@@ -1926,7 +1926,7 @@ holidays['1989-01-16'] = {
   'date': '1989-01-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '成人の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1989-02-11'] = {
@@ -2045,7 +2045,7 @@ holidays['1990-02-12'] = {
   'date': '1990-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1990-03-21'] = {
@@ -2066,7 +2066,7 @@ holidays['1990-04-30'] = {
   'date': '1990-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'みどりの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1990-05-03'] = {
@@ -2108,7 +2108,7 @@ holidays['1990-09-24'] = {
   'date': '1990-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1990-10-10'] = {
@@ -2150,7 +2150,7 @@ holidays['1990-12-24'] = {
   'date': '1990-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1991-01-01'] = {
@@ -2213,7 +2213,7 @@ holidays['1991-05-06'] = {
   'date': '1991-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1991-09-15'] = {
@@ -2227,7 +2227,7 @@ holidays['1991-09-16'] = {
   'date': '1991-09-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '敬老の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1991-09-23'] = {
@@ -2255,7 +2255,7 @@ holidays['1991-11-04'] = {
   'date': '1991-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1991-11-23'] = {
@@ -2318,7 +2318,7 @@ holidays['1992-05-04'] = {
   'date': '1992-05-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '憲法記念日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1992-05-05'] = {
@@ -2458,7 +2458,7 @@ holidays['1993-10-11'] = {
   'date': '1993-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '体育の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1993-11-03'] = {
@@ -2591,7 +2591,7 @@ holidays['1995-01-02'] = {
   'date': '1995-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1995-01-15'] = {
@@ -2605,7 +2605,7 @@ holidays['1995-01-16'] = {
   'date': '1995-01-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '成人の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1995-02-11'] = {
@@ -2717,7 +2717,7 @@ holidays['1996-02-12'] = {
   'date': '1996-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1996-03-20'] = {
@@ -2759,7 +2759,7 @@ holidays['1996-05-06'] = {
   'date': '1996-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1996-07-20'] = {
@@ -2780,7 +2780,7 @@ holidays['1996-09-16'] = {
   'date': '1996-09-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '敬老の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1996-09-23'] = {
@@ -2808,7 +2808,7 @@ holidays['1996-11-04'] = {
   'date': '1996-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1996-11-23'] = {
@@ -2885,7 +2885,7 @@ holidays['1997-07-21'] = {
   'date': '1997-07-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '海の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1997-09-15'] = {
@@ -2927,7 +2927,7 @@ holidays['1997-11-24'] = {
   'date': '1997-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1997-12-23'] = {
@@ -2983,7 +2983,7 @@ holidays['1998-05-04'] = {
   'date': '1998-05-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '憲法記念日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1998-05-05'] = {
@@ -3074,7 +3074,7 @@ holidays['1999-03-22'] = {
   'date': '1999-03-22',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1999-04-29'] = {
@@ -3137,7 +3137,7 @@ holidays['1999-10-11'] = {
   'date': '1999-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '体育の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['1999-11-03'] = {
@@ -3291,7 +3291,7 @@ holidays['2001-02-12'] = {
   'date': '2001-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2001-03-20'] = {
@@ -3312,7 +3312,7 @@ holidays['2001-04-30'] = {
   'date': '2001-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'みどりの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2001-05-03'] = {
@@ -3361,7 +3361,7 @@ holidays['2001-09-24'] = {
   'date': '2001-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2001-10-08'] = {
@@ -3396,7 +3396,7 @@ holidays['2001-12-24'] = {
   'date': '2001-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2002-01-01'] = {
@@ -3459,7 +3459,7 @@ holidays['2002-05-06'] = {
   'date': '2002-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2002-07-20'] = {
@@ -3480,7 +3480,7 @@ holidays['2002-09-16'] = {
   'date': '2002-09-16',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '敬老の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2002-09-23'] = {
@@ -3508,7 +3508,7 @@ holidays['2002-11-04'] = {
   'date': '2002-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2002-11-23'] = {
@@ -3620,7 +3620,7 @@ holidays['2003-11-24'] = {
   'date': '2003-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2003-12-23'] = {
@@ -3767,7 +3767,7 @@ holidays['2005-03-21'] = {
   'date': '2005-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2005-04-29'] = {
@@ -3858,7 +3858,7 @@ holidays['2006-01-02'] = {
   'date': '2006-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2006-01-09'] = {
@@ -3984,7 +3984,7 @@ holidays['2007-02-12'] = {
   'date': '2007-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2007-03-21'] = {
@@ -4005,7 +4005,7 @@ holidays['2007-04-30'] = {
   'date': '2007-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2007-05-03'] = {
@@ -4054,7 +4054,7 @@ holidays['2007-09-24'] = {
   'date': '2007-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2007-10-08'] = {
@@ -4089,7 +4089,7 @@ holidays['2007-12-24'] = {
   'date': '2007-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2008-01-01'] = {
@@ -4152,7 +4152,7 @@ holidays['2008-05-06'] = {
   'date': '2008-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2008-07-21'] = {
@@ -4201,7 +4201,7 @@ holidays['2008-11-24'] = {
   'date': '2008-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2008-12-23'] = {
@@ -4271,7 +4271,7 @@ holidays['2009-05-06'] = {
   'date': '2009-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2009-07-20'] = {
@@ -4362,7 +4362,7 @@ holidays['2010-03-22'] = {
   'date': '2010-03-22',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2010-04-29'] = {
@@ -4558,7 +4558,7 @@ holidays['2012-01-02'] = {
   'date': '2012-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2012-01-09'] = {
@@ -4593,7 +4593,7 @@ holidays['2012-04-30'] = {
   'date': '2012-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2012-05-03'] = {
@@ -4670,7 +4670,7 @@ holidays['2012-12-24'] = {
   'date': '2012-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2013-01-01'] = {
@@ -4733,7 +4733,7 @@ holidays['2013-05-06'] = {
   'date': '2013-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2013-07-15'] = {
@@ -4775,7 +4775,7 @@ holidays['2013-11-04'] = {
   'date': '2013-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2013-11-23'] = {
@@ -4852,7 +4852,7 @@ holidays['2014-05-06'] = {
   'date': '2014-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2014-07-21'] = {
@@ -4901,7 +4901,7 @@ holidays['2014-11-24'] = {
   'date': '2014-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2014-12-23'] = {
@@ -4971,7 +4971,7 @@ holidays['2015-05-06'] = {
   'date': '2015-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2015-07-20'] = {
@@ -5062,7 +5062,7 @@ holidays['2016-03-21'] = {
   'date': '2016-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2016-04-29'] = {
@@ -5160,7 +5160,7 @@ holidays['2017-01-02'] = {
   'date': '2017-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2017-01-09'] = {
@@ -5293,7 +5293,7 @@ holidays['2018-02-12'] = {
   'date': '2018-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2018-03-21'] = {
@@ -5314,7 +5314,7 @@ holidays['2018-04-30'] = {
   'date': '2018-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2018-05-03'] = {
@@ -5370,7 +5370,7 @@ holidays['2018-09-24'] = {
   'date': '2018-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2018-10-08'] = {
@@ -5405,7 +5405,7 @@ holidays['2018-12-24'] = {
   'date': '2018-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2019-01-01'] = {
@@ -5468,7 +5468,7 @@ holidays['2019-05-06'] = {
   'date': '2019-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2019-07-15'] = {
@@ -5489,7 +5489,7 @@ holidays['2019-08-12'] = {
   'date': '2019-08-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '山の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2019-09-16'] = {
@@ -5524,7 +5524,7 @@ holidays['2019-11-04'] = {
   'date': '2019-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2019-11-23'] = {
@@ -5601,7 +5601,7 @@ holidays['2020-05-06'] = {
   'date': '2020-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2020-07-20'] = {
@@ -5895,7 +5895,7 @@ holidays['2023-01-02'] = {
   'date': '2023-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2023-01-09'] = {
@@ -6028,7 +6028,7 @@ holidays['2024-02-12'] = {
   'date': '2024-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2024-03-20'] = {
@@ -6070,7 +6070,7 @@ holidays['2024-05-06'] = {
   'date': '2024-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2024-07-15'] = {
@@ -6091,7 +6091,7 @@ holidays['2024-08-12'] = {
   'date': '2024-08-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '山の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2024-09-16'] = {
@@ -6112,7 +6112,7 @@ holidays['2024-09-23'] = {
   'date': '2024-09-23',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2024-10-14'] = {
@@ -6133,7 +6133,7 @@ holidays['2024-11-04'] = {
   'date': '2024-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2024-11-23'] = {
@@ -6210,7 +6210,7 @@ holidays['2025-05-06'] = {
   'date': '2025-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2025-07-21'] = {
@@ -6266,7 +6266,7 @@ holidays['2025-11-24'] = {
   'date': '2025-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2025-12-23'] = {
@@ -6336,7 +6336,7 @@ holidays['2026-05-06'] = {
   'date': '2026-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2026-07-20'] = {
@@ -6434,7 +6434,7 @@ holidays['2027-03-22'] = {
   'date': '2027-03-22',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2027-04-29'] = {
@@ -6658,7 +6658,7 @@ holidays['2029-02-12'] = {
   'date': '2029-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2029-03-20'] = {
@@ -6679,7 +6679,7 @@ holidays['2029-04-30'] = {
   'date': '2029-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2029-05-03'] = {
@@ -6735,7 +6735,7 @@ holidays['2029-09-24'] = {
   'date': '2029-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2029-10-08'] = {
@@ -6770,7 +6770,7 @@ holidays['2029-12-24'] = {
   'date': '2029-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2030-01-01'] = {
@@ -6833,7 +6833,7 @@ holidays['2030-05-06'] = {
   'date': '2030-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2030-07-15'] = {
@@ -6854,7 +6854,7 @@ holidays['2030-08-12'] = {
   'date': '2030-08-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '山の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2030-09-16'] = {
@@ -6889,7 +6889,7 @@ holidays['2030-11-04'] = {
   'date': '2030-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2030-11-23'] = {
@@ -6966,7 +6966,7 @@ holidays['2031-05-06'] = {
   'date': '2031-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2031-07-21'] = {
@@ -7022,7 +7022,7 @@ holidays['2031-11-24'] = {
   'date': '2031-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2031-12-23'] = {
@@ -7183,7 +7183,7 @@ holidays['2033-03-21'] = {
   'date': '2033-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2033-04-29'] = {
@@ -7281,7 +7281,7 @@ holidays['2034-01-02'] = {
   'date': '2034-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2034-01-09'] = {
@@ -7414,7 +7414,7 @@ holidays['2035-02-12'] = {
   'date': '2035-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2035-03-21'] = {
@@ -7435,7 +7435,7 @@ holidays['2035-04-30'] = {
   'date': '2035-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2035-05-03'] = {
@@ -7491,7 +7491,7 @@ holidays['2035-09-24'] = {
   'date': '2035-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2035-10-08'] = {
@@ -7526,7 +7526,7 @@ holidays['2035-12-24'] = {
   'date': '2035-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2036-01-01'] = {
@@ -7589,7 +7589,7 @@ holidays['2036-05-06'] = {
   'date': '2036-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2036-07-21'] = {
@@ -7645,7 +7645,7 @@ holidays['2036-11-24'] = {
   'date': '2036-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2036-12-23'] = {
@@ -7715,7 +7715,7 @@ holidays['2037-05-06'] = {
   'date': '2037-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2037-07-20'] = {
@@ -8016,7 +8016,7 @@ holidays['2040-01-02'] = {
   'date': '2040-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2040-01-09'] = {
@@ -8051,7 +8051,7 @@ holidays['2040-04-30'] = {
   'date': '2040-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2040-05-03'] = {
@@ -8135,7 +8135,7 @@ holidays['2040-12-24'] = {
   'date': '2040-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2041-01-01'] = {
@@ -8198,7 +8198,7 @@ holidays['2041-05-06'] = {
   'date': '2041-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2041-07-15'] = {
@@ -8219,7 +8219,7 @@ holidays['2041-08-12'] = {
   'date': '2041-08-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '山の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2041-09-16'] = {
@@ -8254,7 +8254,7 @@ holidays['2041-11-04'] = {
   'date': '2041-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2041-11-23'] = {
@@ -8331,7 +8331,7 @@ holidays['2042-05-06'] = {
   'date': '2042-05-06',
   'week': '火',
   'week_en': 'Tuesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2042-07-21'] = {
@@ -8387,7 +8387,7 @@ holidays['2042-11-24'] = {
   'date': '2042-11-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '勤労感謝の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2042-12-23'] = {
@@ -8457,7 +8457,7 @@ holidays['2043-05-06'] = {
   'date': '2043-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2043-07-20'] = {
@@ -8555,7 +8555,7 @@ holidays['2044-03-21'] = {
   'date': '2044-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2044-04-29'] = {
@@ -8653,7 +8653,7 @@ holidays['2045-01-02'] = {
   'date': '2045-01-02',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '元日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2045-01-09'] = {
@@ -8786,7 +8786,7 @@ holidays['2046-02-12'] = {
   'date': '2046-02-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '建国記念の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2046-03-20'] = {
@@ -8807,7 +8807,7 @@ holidays['2046-04-30'] = {
   'date': '2046-04-30',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '昭和の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2046-05-03'] = {
@@ -8863,7 +8863,7 @@ holidays['2046-09-24'] = {
   'date': '2046-09-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '秋分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2046-10-08'] = {
@@ -8898,7 +8898,7 @@ holidays['2046-12-24'] = {
   'date': '2046-12-24',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '天皇誕生日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2047-01-01'] = {
@@ -8961,7 +8961,7 @@ holidays['2047-05-06'] = {
   'date': '2047-05-06',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2047-07-15'] = {
@@ -8982,7 +8982,7 @@ holidays['2047-08-12'] = {
   'date': '2047-08-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '山の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2047-09-16'] = {
@@ -9017,7 +9017,7 @@ holidays['2047-11-04'] = {
   'date': '2047-11-04',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '文化の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2047-11-23'] = {
@@ -9094,7 +9094,7 @@ holidays['2048-05-06'] = {
   'date': '2048-05-06',
   'week': '水',
   'week_en': 'Wednesday',
-  'name': '振替休日',
+  'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2048-07-20'] = {
@@ -9304,7 +9304,7 @@ holidays['2050-03-21'] = {
   'date': '2050-03-21',
   'week': '月',
   'week_en': 'Monday',
-  'name': '振替休日',
+  'name': '春分の日 振替休日',
   'name_en': "Holiday in lieu"
 };
 holidays['2050-04-29'] = {
