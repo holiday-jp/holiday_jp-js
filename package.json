@@ -1,6 +1,6 @@
 {
   "name": "@holiday-jp/holiday_jp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
   "scripts": {
