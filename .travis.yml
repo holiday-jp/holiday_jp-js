@@ -6,4 +6,6 @@ node_js:
   - "8"
 before_install:
   - git submodule update --init
-  - cd holiday_jp/; git pull origin master; cd ../
+  - npm install
+  - npm run build
+  
