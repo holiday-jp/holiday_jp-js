@@ -115,13 +115,13 @@ module.exports = holiday_jp;
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"@holiday-jp/holiday_jp","version":"2.0.1","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git pull origin master; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.6.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
+module.exports = {"name":"@holiday-jp/holiday_jp","version":"2.0.1","description":"Japanese holidays","main":"release/holiday_jp.js","scripts":{"test":"npm run build; mocha --require should test/*.js","generate":"git submodule update; cd holiday_jp/; git pull origin master; cd ../; node scripts/generate.js","build":"npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"chai":">= 1.3.0","js-yaml":">= 1.0.3","mocha":">= 1.7.0","moment":"*","octopublish":"^0.6.0","should":"~1.2.2","uglify-js":"*","webpack":"*"}}
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-// Generated from holidays.yml at 2018-02-21 00:26:24;
+// Generated from holidays.yml at 2018-06-30 23:22:36;
 var holidays = {};
 holidays['1970-01-01'] = {
   'date': '1970-01-01',
@@ -5611,17 +5611,24 @@ holidays['2020-05-06'] = {
   'name': 'こどもの日 振替休日',
   'name_en': "Holiday in lieu"
 };
-holidays['2020-07-20'] = {
-  'date': '2020-07-20',
-  'week': '月',
-  'week_en': 'Monday',
+holidays['2020-07-23'] = {
+  'date': '2020-07-23',
+  'week': '木',
+  'week_en': 'Thursday',
   'name': '海の日',
   'name_en': "Marine Day"
 };
-holidays['2020-08-11'] = {
-  'date': '2020-08-11',
-  'week': '火',
-  'week_en': 'Tuesday',
+holidays['2020-07-24'] = {
+  'date': '2020-07-24',
+  'week': '金',
+  'week_en': 'Friday',
+  'name': 'スポーツの日',
+  'name_en': "Health and Sports Day"
+};
+holidays['2020-08-10'] = {
+  'date': '2020-08-10',
+  'week': '月',
+  'week_en': 'Monday',
   'name': '山の日',
   'name_en': "Mountain Day"
 };
@@ -5638,13 +5645,6 @@ holidays['2020-09-22'] = {
   'week_en': 'Tuesday',
   'name': '秋分の日',
   'name_en': "Autumnal Equinox Day"
-};
-holidays['2020-10-12'] = {
-  'date': '2020-10-12',
-  'week': '月',
-  'week_en': 'Monday',
-  'name': '体育の日',
-  'name_en': "Health and Sports Day"
 };
 holidays['2020-11-03'] = {
   'date': '2020-11-03',
@@ -5755,7 +5755,7 @@ holidays['2021-10-11'] = {
   'date': '2021-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2021-11-03'] = {
@@ -5867,7 +5867,7 @@ holidays['2022-10-10'] = {
   'date': '2022-10-10',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2022-11-03'] = {
@@ -5986,7 +5986,7 @@ holidays['2023-10-09'] = {
   'date': '2023-10-09',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2023-11-03'] = {
@@ -6126,7 +6126,7 @@ holidays['2024-10-14'] = {
   'date': '2024-10-14',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2024-11-03'] = {
@@ -6259,7 +6259,7 @@ holidays['2025-10-13'] = {
   'date': '2025-10-13',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2025-11-03'] = {
@@ -6392,7 +6392,7 @@ holidays['2026-10-12'] = {
   'date': '2026-10-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2026-11-03'] = {
@@ -6511,7 +6511,7 @@ holidays['2027-10-11'] = {
   'date': '2027-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2027-11-03'] = {
@@ -6623,7 +6623,7 @@ holidays['2028-10-09'] = {
   'date': '2028-10-09',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2028-11-03'] = {
@@ -6756,7 +6756,7 @@ holidays['2029-10-08'] = {
   'date': '2029-10-08',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2029-11-03'] = {
@@ -6882,7 +6882,7 @@ holidays['2030-10-14'] = {
   'date': '2030-10-14',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2030-11-03'] = {
@@ -7015,7 +7015,7 @@ holidays['2031-10-13'] = {
   'date': '2031-10-13',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2031-11-03'] = {
@@ -7141,7 +7141,7 @@ holidays['2032-10-11'] = {
   'date': '2032-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2032-11-03'] = {
@@ -7260,7 +7260,7 @@ holidays['2033-10-10'] = {
   'date': '2033-10-10',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2033-11-03'] = {
@@ -7379,7 +7379,7 @@ holidays['2034-10-09'] = {
   'date': '2034-10-09',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2034-11-03'] = {
@@ -7512,7 +7512,7 @@ holidays['2035-10-08'] = {
   'date': '2035-10-08',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2035-11-03'] = {
@@ -7631,7 +7631,7 @@ holidays['2036-10-13'] = {
   'date': '2036-10-13',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2036-11-03'] = {
@@ -7764,7 +7764,7 @@ holidays['2037-10-12'] = {
   'date': '2037-10-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2037-11-03'] = {
@@ -7876,7 +7876,7 @@ holidays['2038-10-11'] = {
   'date': '2038-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2038-11-03'] = {
@@ -7988,7 +7988,7 @@ holidays['2039-10-10'] = {
   'date': '2039-10-10',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2039-11-03'] = {
@@ -8114,7 +8114,7 @@ holidays['2040-10-08'] = {
   'date': '2040-10-08',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2040-11-03'] = {
@@ -8240,7 +8240,7 @@ holidays['2041-10-14'] = {
   'date': '2041-10-14',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2041-11-03'] = {
@@ -8373,7 +8373,7 @@ holidays['2042-10-13'] = {
   'date': '2042-10-13',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2042-11-03'] = {
@@ -8506,7 +8506,7 @@ holidays['2043-10-12'] = {
   'date': '2043-10-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2043-11-03'] = {
@@ -8625,7 +8625,7 @@ holidays['2044-10-10'] = {
   'date': '2044-10-10',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2044-11-03'] = {
@@ -8744,7 +8744,7 @@ holidays['2045-10-09'] = {
   'date': '2045-10-09',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2045-11-03'] = {
@@ -8877,7 +8877,7 @@ holidays['2046-10-08'] = {
   'date': '2046-10-08',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2046-11-03'] = {
@@ -9003,7 +9003,7 @@ holidays['2047-10-14'] = {
   'date': '2047-10-14',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2047-11-03'] = {
@@ -9136,7 +9136,7 @@ holidays['2048-10-12'] = {
   'date': '2048-10-12',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2048-11-03'] = {
@@ -9255,7 +9255,7 @@ holidays['2049-10-11'] = {
   'date': '2049-10-11',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2049-11-03'] = {
@@ -9374,7 +9374,7 @@ holidays['2050-10-10'] = {
   'date': '2050-10-10',
   'week': '月',
   'week_en': 'Monday',
-  'name': '体育の日',
+  'name': 'スポーツの日',
   'name_en': "Health and Sports Day"
 };
 holidays['2050-11-03'] = {
