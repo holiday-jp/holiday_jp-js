@@ -7,7 +7,7 @@ var holiday_jp = require('./../release/holiday_jp'); // test release build
 var TESTSET_DIR = __dirname + '/../holiday_jp/';
 
 describe('holiday_jp', function(){
-  
+
   it('should have valid version', function(){
     expect(holiday_jp.VERSION).to.match(/^[0-9]+\.[0-9]+\.[0-9]+$/);
   });
@@ -32,7 +32,11 @@ describe('holiday_jp', function(){
   it('should be Mountain Day from 2016', function(){
     expect(holiday_jp.isHoliday(new Date('2015-08-11'))).to.not.eq(true);
     for (year = 2016; year <= 2050; year++) {
-      expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.eq(true);
+      if (year == 2020) {
+        expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.not.eq(true);
+      } else {
+        expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.eq(true);
+      }
     }
   });
 
@@ -48,4 +52,3 @@ describe('holiday_jp', function(){
     });
   });
 });
-

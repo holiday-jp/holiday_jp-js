@@ -4,7 +4,7 @@
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
   "scripts": {
-    "test": "mocha --require should test/*.js",
+    "test": "npm run build; mocha --require should test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git pull origin master; cd ../; node scripts/generate.js",
     "build": "npm run generate; webpack lib/holiday_jp.js scripts/holiday_jp_webpacked.js; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"
   },
