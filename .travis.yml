@@ -4,6 +4,7 @@ node_js:
   - "5"
   - "6"
   - "8"
+  - "10"
 before_install:
   - git submodule update --init
-  - cd holiday_jp/; git pull origin master; cd ../
+  - cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../
