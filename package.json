@@ -23,9 +23,10 @@
   "homepage": "https://github.com/holiday-jp/holiday_jp-js",
   "devDependencies": {
     "chai": "^4.2.0",
-    "js-yaml": "^3.12.0",
+    "js-yaml": "^3.13.1",
     "mocha": "^5.2.0",
     "moment": "^2.23.0",
+    "request": "^2.88.0",
     "should": "~1.2.2",
     "uglify-js": "^3.4.9",
     "webpack": "^4.28.2"
