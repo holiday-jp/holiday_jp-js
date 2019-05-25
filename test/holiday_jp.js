@@ -1,10 +1,9 @@
-var fs = require('fs');
-var files = fs.readdirSync('lib');
+var request = require('request');
 var expect = require('chai').expect;
 var yaml = require('js-yaml');
 var holiday_jp = require('./../release/holiday_jp'); // test release build
 
-var TESTSET_DIR = __dirname + '/../holiday_jp/';
+var HOLIDAYS_DETAIL_URL = 'https://raw.githubusercontent.com/holiday-jp/holiday_jp/master/holidays_detailed.yml';
 
 describe('holiday_jp', function(){
 
@@ -45,10 +44,13 @@ describe('holiday_jp', function(){
     expect(holidays.length).to.eq(1);
   });
 
-  it('.isHoliday should be holiday all holidays_detailed.yml', function(){
-    var testset = yaml.safeLoad(fs.readFileSync(TESTSET_DIR + 'holidays_detailed.yml', 'utf8'));
-    Object.keys(testset).forEach(function (key) {
-      expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);
-    });
+  it('.isHoliday should be holiday all holidays_detailed.yml', function(done){
+    request(HOLIDAYS_DETAIL_URL, function (error, response, body) {
+      var testset = yaml.safeLoad(body);
+      Object.keys(testset).forEach(function (key) {
+        expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);
+      });
+      done();
+    })
   });
 });
