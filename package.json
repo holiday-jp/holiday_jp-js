@@ -3,6 +3,7 @@
   "version": "2.2.2",
   "description": "Japanese holidays",
   "main": "release/holiday_jp.js",
+  "types": "lib/holiday_jp.d.ts",
   "scripts": {
     "test": "mocha --require should test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node scripts/generate.js",
