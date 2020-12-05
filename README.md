@@ -1,4 +1,4 @@
-# holiday_jp JavaScript [![Build Status](https://travis-ci.org/holiday-jp/holiday_jp-js.svg?branch=master)](https://travis-ci.org/holiday-jp/holiday_jp-js)
+# holiday_jp JavaScript [![test](https://github.com/holiday-jp/holiday_jp-js/workflows/test/badge.svg)](https://github.com/holiday-jp/holiday_jp-js/actions)
 
 Get holidays in Japan.
 
