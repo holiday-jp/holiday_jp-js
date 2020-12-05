@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './lib/holiday_jp.js',
   // 出力の設定
   output: {
