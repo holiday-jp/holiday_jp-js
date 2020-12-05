@@ -31,7 +31,7 @@ describe('holiday_jp', function(){
   it('should be Mountain Day from 2016', function(){
     expect(holiday_jp.isHoliday(new Date('2015-08-11'))).to.not.eq(true);
     for (year = 2016; year <= 2050; year++) {
-      if (year == 2020) {
+      if (year == 2020 || year == 2021) {
         expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.not.eq(true);
       } else {
         expect(holiday_jp.isHoliday(new Date(year + '-08-11'))).to.eq(true);
