@@ -1,11 +1,11 @@
 var request = require('request');
 var expect = require('chai').expect;
 var yaml = require('js-yaml');
-var holiday_jp = require('./../lib/holiday_jp');
+var holiday_jp = require('./../release/holiday_jp.min');
 
 var HOLIDAYS_DETAIL_URL = 'https://raw.githubusercontent.com/holiday-jp/holiday_jp/master/holidays_detailed.yml';
 
-describe('holiday_jp', function(){
+describe('release/holiday_jp.min.js', function(){
 
   it('should have valid version', function(){
     expect(holiday_jp.VERSION).to.match(/^[0-9]+\.[0-9]+\.[0-9]+$/);

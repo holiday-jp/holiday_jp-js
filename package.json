@@ -2,7 +2,7 @@
   "name": "@holiday-jp/holiday_jp",
   "version": "2.2.3",
   "description": "Japanese holidays",
-  "main": "release/holiday_jp.js",
+  "main": "lib/holiday_jp.js",
   "types": "lib/holiday_jp.d.ts",
   "scripts": {
     "test": "mocha --require should test/*.js",
