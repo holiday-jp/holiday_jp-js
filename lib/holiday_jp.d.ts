@@ -2,11 +2,11 @@
  * The type definition of a holiday
  * @see https://github.com/holiday-jp/holiday_jp-js/blob/master/lib/holidays.js
  */
-export interface Holiday {
+export interface Holiday<T extends Date | string = Date> {
   /**
-   * Expression of Date object
+   * Expression of Date object or Date string
    */
-  date: Date;
+  date: T;
   /**
    * Day of the week in Japanese
    */
@@ -29,6 +29,11 @@ export interface Holiday {
  * The version of this package
  */
 export const VERSION: string
+
+/**
+ * holidays
+ */
+export const holidays: Record<string, Holiday<string>>
 
 /**
  * Find holidays between parameters
