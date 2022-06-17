@@ -1,5 +1,14 @@
-<script src="./../release/holiday_jp.js"></script>
-<script>
-var holidays = holiday_jp.between(new Date('2010-09-14'), new Date('2010-09-21'));
-console.log(holidays[0]['name']) // // 敬老の日
-</script>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" /> 
+    <script src="./../release/holiday_jp.js"></script>
+    <script>
+    var holidays = holiday_jp.between(new Date('2010-09-14'), new Date('2010-09-21'));
+    console.log(holidays[0]['name'])
+    console.log(holiday_jp.isHoliday(new Date('2010-09-20')))
+    console.log(holiday_jp.isHoliday(new Date('2010-09-21')))
+    </script>
+  </head>
+  <body></body>
+</html>
