@@ -28,6 +28,18 @@ var holidays = holiday_jp.between(new Date('2010-09-14'), new Date('2010-09-21')
 console.log(holidays[0]['name']); // 敬老の日
 ```
 
+If you want to use specific years only
+
+```javascript
+var holiday_jp = require('@holiday-jp/holiday_jp/lib/no_autoload_holidays');
+var holidays_2010 = require('@holiday-jp/holiday_jp/lib/holidays_every_year/2010');
+var holidays_2011 = require('@holiday-jp/holiday_jp/lib/holidays_every_year/2011');
+holiday_jp.setHolidays([holidays_2010, holidays_2011]);
+
+var holidays = holiday_jp.between(new Date('2010-09-14'), new Date('2010-09-21'));
+console.log(holidays[0]['name']); // 敬老の日
+```
+
 In TypeScript
 
 ```typescript
