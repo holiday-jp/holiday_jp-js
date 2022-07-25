@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies for all browsers
-        run: npx playwright install-deps && npx playwright install
-
       - name: Check out source code
         uses: actions/checkout@v2
 
@@ -31,5 +28,7 @@ jobs:
 
       - name: Run test
         run: | 
+          npx playwright install-deps
+          npx playwright install
           npm test 
           npx playwright test --browser=all
