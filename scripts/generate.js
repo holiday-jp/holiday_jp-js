@@ -18,6 +18,7 @@ const writeFile = (file_name, holidays) => {
     jsfile.push('};');
   }
   jsfile.push('module.exports = holidays;');
+  jsfile.push('');
   
   fs.writeFileSync(file_name, jsfile.join("\n"));
 }
