@@ -4,6 +4,7 @@
   "description": "Japanese holidays",
   "main": "lib/holiday_jp.js",
   "types": "lib/holiday_jp.d.ts",
+  "files": ["lib"],
   "scripts": {
     "test": "mocha test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node scripts/generate.js",
