@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/holiday-jp/holiday_jp-js",
   "devDependencies": {
-    "@playwright/test": "^1.22.2",
+    "@playwright/test": "^1.27.1",
     "chai": "^4.3.6",
     "js-yaml": "^3.13.1",
     "mocha": "^8.2.1",
