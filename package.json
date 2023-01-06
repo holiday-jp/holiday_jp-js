@@ -27,7 +27,7 @@
     "@playwright/test": "^1.27.1",
     "chai": "^4.3.6",
     "js-yaml": "^3.13.1",
-    "mocha": "^8.2.1",
+    "mocha": "^10.2.0",
     "moment": "^2.23.0",
     "request": "^2.88.0",
     "uglify-js": "^3.4.9",
