@@ -1,5 +1,5 @@
-var request = require('request');
 var expect = require('chai').expect;
+var fetch = require('node-fetch');
 var yaml = require('js-yaml');
 var holiday_jp = require('./../release/holiday_jp.min');
 
@@ -45,12 +45,14 @@ describe('release/holiday_jp.min.js', function(){
   });
 
   it('.isHoliday should be holiday all holidays_detailed.yml', function(done){
-    request(HOLIDAYS_DETAIL_URL, function (error, response, body) {
-      var testset = yaml.safeLoad(body);
-      Object.keys(testset).forEach(function (key) {
-        expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);
+    fetch(HOLIDAYS_DETAIL_URL)
+      .then(res => res.text())
+      .then(body => {
+        var testset = yaml.safeLoad(body);
+        Object.keys(testset).forEach(function (key) {
+          expect(holiday_jp.isHoliday(new Date(key))).to.eq(true);
+        });
+        done();
       });
-      done();
-    })
   });
 });
