@@ -1,5 +1,4 @@
 var expect = require('chai').expect;
-var fetch = require('node-fetch');
 var yaml = require('js-yaml');
 var holiday_jp = require('./../release/holiday_jp.min');
 
