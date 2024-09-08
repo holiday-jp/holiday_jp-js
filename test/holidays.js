@@ -1,11 +1,12 @@
-var expect = require('chai').expect;
+var { describe, it } = require("node:test")
+var { strictEqual } = require("node:assert")
 var yaml = require('js-yaml');
 var holidays = require('./../lib/holidays');
 
 var HOLIDAYS_DETAIL_URL = 'https://raw.githubusercontent.com/holiday-jp/holiday_jp/master/holidays_detailed.yml';
 
 describe('holidays', function(){
-  it('holidays should be holiday all holidays_detailed.yml', function(done){
+  it('holidays should be holiday all holidays_detailed.yml', function(_, done){
     fetch(HOLIDAYS_DETAIL_URL)
       .then(res => res.text())
       .then(body => {
@@ -18,7 +19,7 @@ describe('holidays', function(){
         }
         Object.keys(testset).forEach(function (key) {
           var d = format(new Date(key));
-          expect(holidays[d].name).to.eq(testset[key].name);
+          strictEqual(holidays[d].name, testset[key].name);
         });
         done();
       });
