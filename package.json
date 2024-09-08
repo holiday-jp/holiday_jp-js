@@ -6,7 +6,7 @@
   "types": "lib/holiday_jp.d.ts",
   "files": ["lib"],
   "scripts": {
-    "test": "mocha test/*.js",
+    "test": "node --test ./test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node scripts/generate.js",
     "build": "npm run generate; webpack; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"
   },
