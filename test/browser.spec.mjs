@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { expect } from 'chai'
+import { strictEqual } from "node:assert";
 
 test('all functions', async ({ page }) => {
   const console_values = [];
@@ -8,7 +8,7 @@ test('all functions', async ({ page }) => {
   const __dirname = new URL(import.meta.url).pathname;
   await page.goto(`file://${__dirname}/../index.html`);
 
-  expect(console_values[0]).to.eq('敬老の日');
-  expect(console_values[1]).to.eq('true');
-  expect(console_values[2]).to.eq('false');
+  strictEqual(console_values[0], '敬老の日');
+  strictEqual(console_values[1], 'true');
+  strictEqual(console_values[2], 'false');
 });

@@ -6,7 +6,7 @@
   "types": "lib/holiday_jp.d.ts",
   "files": ["lib"],
   "scripts": {
-    "test": "mocha test/*.js",
+    "test": "node --test ./test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node scripts/generate.js",
     "build": "npm run generate; webpack; node scripts/build.js;rm scripts/holiday_jp_webpacked.js;cd ./release/; uglifyjs holiday_jp.js -c -m --source-map -o holiday_jp.min.js"
   },
@@ -25,9 +25,7 @@
   "homepage": "https://github.com/holiday-jp/holiday_jp-js",
   "devDependencies": {
     "@playwright/test": "^1.27.1",
-    "chai": "^4.3.6",
     "js-yaml": "^3.13.1",
-    "mocha": "^10.2.0",
     "moment": "^2.23.0",
     "uglify-js": "^3.19.3",
     "webpack": "^5.91.0",
