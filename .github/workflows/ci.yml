@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ '18', '20', '22' ]
+        node-version: [ '20', '22', '24' ]
     steps:
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -26,9 +26,21 @@ jobs:
       - name: Setup
         run: npm install
 
+      - name: Build
+        run: npm run build
+
+      - name: Check for uncommitted changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "Error: There are uncommitted changes after the build step."
+            git status
+            git diff
+            exit 1
+          fi
+
       - name: Run test
-        run: | 
+        run: |
+          npm test
           npx playwright install-deps
           npx playwright install
-          npm test 
           npx playwright test --browser=all

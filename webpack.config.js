@@ -1,12 +1,21 @@
-const path = require('path');
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-module.exports = {
-  mode: 'development',
-  entry: './lib/holiday_jp.js',
-  // 出力の設定
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const config = {
+  mode: 'production',
+  entry: path.join(__dirname, 'lib/holiday_jp.js'),
   output: {
-    filename: 'holiday_jp_webpacked.js',
-    // 出力先のパス（絶対パスを指定する必要がある）
-    path: path.join(__dirname, 'scripts')
+    filename: 'holiday_jp.js',
+    path: path.join(__dirname, 'release'),
+    library: 'holiday_jp',
+    libraryTarget: 'umd',
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
+  },
+  optimization: {
+    minimize: false
   }
 };
+
+export default config;
