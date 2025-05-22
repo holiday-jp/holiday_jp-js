@@ -1,8 +1,11 @@
-import * as path from 'path';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const config = {
-  mode: 'production' as const,
-  entry: './lib/holiday_jp.js',
+  mode: 'production',
+  entry: path.join(__dirname, 'lib/holiday_jp.js'),
   output: {
     filename: 'holiday_jp.js',
     path: path.join(__dirname, 'release'),
