@@ -10,7 +10,7 @@
   "scripts": {
     "test": "node --test ./test/*.js",
     "generate": "git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node scripts/generate.js",
-    "build": "tsc && webpack && uglifyjs release/holiday_jp.js -c -m --source-map -o release/holiday_jp.min.js && es-check es2015 lib/*.js release/*.js"
+    "build": "tsc && webpack && es-check es2015 lib/*.js release/*.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "js-yaml": "^3.13.1",
     "moment": "^2.23.0",
     "typescript": "^5.8.3",
-    "uglify-js": "^3.19.3",
     "webpack": "^5.91.0",
     "webpack-cli": "^6.0.1"
   }
