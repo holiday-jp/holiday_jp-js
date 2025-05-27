@@ -1,8 +1,5 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const baseConfig = {
   mode: 'production',
   entry: path.join(__dirname, 'lib/holiday_jp.js'),
@@ -14,7 +11,7 @@ const baseConfig = {
   },
 };
 
-export default [{
+module.exports = [{
   ...baseConfig,
   output: {
     ...baseConfig.output,
