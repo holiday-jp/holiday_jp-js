@@ -7,13 +7,13 @@
 		exports["holiday_jp"] = factory();
 	else
 		root["holiday_jp"] = factory();
-})(typeof self !== 'undefined' ? self : this, () => {
+})(Object(typeof self !== 'undefined' ? self : this), () => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 886:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 886
+(__unused_webpack_module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
@@ -31,10 +31,10 @@ function format(date) {
 exports["default"] = format;
 
 
-/***/ }),
+/***/ },
 
-/***/ 782:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 782
+(module, __unused_webpack_exports, __webpack_require__) {
 
 
 var __importDefault = (this && this.__importDefault) || function (mod) {
@@ -81,10 +81,10 @@ const holiday_jp = {
 module.exports = holiday_jp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 496:
-/***/ ((module) => {
+/***/ 496
+(module) {
 
 
 const holidays = {
@@ -9395,14 +9395,14 @@ const holidays = {
 module.exports = holidays;
 
 
-/***/ }),
+/***/ },
 
-/***/ 330:
-/***/ ((module) => {
+/***/ 330
+(module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"name":"@holiday-jp/holiday_jp","version":"2.5.1","description":"Japanese holidays","main":"lib/holiday_jp.js","types":"lib/holiday_jp.d.ts","files":["lib"],"scripts":{"test":"node --test ./test/*.js","generate":"git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node -r esbuild-register scripts/generate.ts","build":"tsc && webpack && es-check es2015 lib/*.js release/*.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken\'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"@playwright/test":"^1.48.0","es-check":"^9.1.2","esbuild-register":"^3.6.0","js-yaml":"^3.13.1","moment":"^2.23.0","typescript":"^5.8.3","webpack":"^5.91.0","webpack-cli":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"@holiday-jp/holiday_jp","version":"2.5.1","description":"Japanese holidays","main":"lib/holiday_jp.js","types":"lib/holiday_jp.d.ts","files":["lib"],"scripts":{"test":"node --test ./test/*.js","generate":"git submodule update; cd holiday_jp/; git fetch origin master; git reset --hard origin/master; cd ../; node -r esbuild-register scripts/generate.ts","build":"tsc && webpack && es-check es2015 lib/*.js release/*.js"},"repository":{"type":"git","url":"https://github.com/holiday-jp/holiday_jp-js"},"keywords":["holidays"],"author":"Ken\'ichiro Oyama","license":"MIT","bugs":{"url":"https://github.com/holiday-jp/holiday_jp-js/issues"},"homepage":"https://github.com/holiday-jp/holiday_jp-js","devDependencies":{"@playwright/test":"^1.48.0","es-check":"^9.1.2","esbuild-register":"^3.6.0","js-yaml":"^4.2.0","moment":"^2.23.0","typescript":"^5.8.3","webpack":"^5.91.0","webpack-cli":"^6.0.1"}}');
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/

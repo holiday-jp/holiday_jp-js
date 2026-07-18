@@ -10,7 +10,7 @@ describe('holidays', function(){
     fetch(HOLIDAYS_DETAIL_URL)
       .then(res => res.text())
       .then(body => {
-        var testset = yaml.safeLoad(body);
+        var testset = yaml.load(body);
         function format(date) {
           var year = date.getFullYear();
           var month = ('0' + (date.getMonth() + 1)).slice(-2);

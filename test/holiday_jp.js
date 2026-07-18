@@ -47,7 +47,7 @@ describe('holiday_jp', function () {
     fetch(HOLIDAYS_DETAIL_URL)
       .then(res => res.text())
       .then(body => {
-        var testset = yaml.safeLoad(body);
+        var testset = yaml.load(body);
         Object.keys(testset).forEach(function (key) {
           strictEqual(holiday_jp.isHoliday(new Date(key)), true);
         });
