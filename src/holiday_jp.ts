@@ -40,8 +40,7 @@ const holiday_jp = {
     if (date instanceof Date) {
       date = format(date);
     }
-    // 型安全なチェック方法に変更
-    return Object.keys(holidaysData).includes(date);
+    return Object.prototype.hasOwnProperty.call(holidaysData, date);
   }
 };
 
