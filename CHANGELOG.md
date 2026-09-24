@@ -1,5 +1,7 @@
 # Changelog
 
+## [v2.5.1](https://github.com/holiday-jp/holiday_jp-js/compare/v2.5.2...v2.5.1) - 2026-09-24
+
 ## [v2.5.2](https://github.com/holiday-jp/holiday_jp-js/compare/v2.5.1...v2.5.2) - 2026-09-24
 
 - Bump webpack from 5.94.0 to 5.105.0 by @dependabot[bot] in https://github.com/holiday-jp/holiday_jp-js/pull/76
