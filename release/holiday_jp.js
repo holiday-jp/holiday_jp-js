@@ -74,8 +74,7 @@ const holiday_jp = {
         if (date instanceof Date) {
             date = (0, format_1.default)(date);
         }
-        // 型安全なチェック方法に変更
-        return Object.keys(holidays_1.default).includes(date);
+        return Object.prototype.hasOwnProperty.call(holidays_1.default, date);
     }
 };
 module.exports = holiday_jp;
