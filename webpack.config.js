@@ -9,6 +9,19 @@ const baseConfig = {
     libraryTarget: 'umd',
     globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
+  module: {
+    rules: [
+      {
+        // Tree shaking cannot trim a JSON module required from CommonJS (lib/ is tsc output),
+        // so keep only the field the bundle reads; otherwise every devDependencies bump changes release/.
+        test: path.join(__dirname, 'package.json'),
+        type: 'json',
+        parser: {
+          parse: (source) => ({ version: JSON.parse(source).version }),
+        },
+      },
+    ],
+  },
 };
 
 module.exports = [{
