@@ -2,4 +2,4 @@
 	vPrefix = true
 	releaseBranch = main
 	versionFile = package.json
-	command = "npm install --package-lock-only --ignore-scripts"
+	postVersionCommand = "npm install --package-lock-only --ignore-scripts"
