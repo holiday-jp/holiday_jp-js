@@ -9399,7 +9399,7 @@ module.exports = holidays;
 /***/ 330
 (module) {
 
-module.exports = {"version":"2.5.2"};
+module.exports = {"version":"2.5.3"};
 
 /***/ }
 
