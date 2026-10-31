@@ -1,5 +1,10 @@
 # Changelog
 
+## [v2.5.3](https://github.com/holiday-jp/holiday_jp-js/compare/v2.5.2...v2.5.3) - 2026-10-31
+
+- chore(deps-dev): bump es-check from 9.8.0 to 9.8.1 in the dependencies group by @dependabot[bot] in https://github.com/holiday-jp/holiday_jp-js/pull/106
+- chore(deps-dev): bump fast-uri from 3.1.8 to 3.1.9 by @dependabot[bot] in https://github.com/holiday-jp/holiday_jp-js/pull/113
+
 ## [v2.5.2](https://github.com/holiday-jp/holiday_jp-js/compare/v2.5.1...v2.5.2) - 2026-09-24
 
 - Bump webpack from 5.94.0 to 5.105.0 by @dependabot[bot] in https://github.com/holiday-jp/holiday_jp-js/pull/76
